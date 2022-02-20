@@ -32,6 +32,8 @@
 ## 物品
 
 * [物品配置](wu-pin/wu-pin-pei-zhi.md)
+* [物品消耗](wu-pin/wu-pin-xiao-hao.md)
+* [物品指令](wu-pin/wu-pin-zhi-ling.md)
 
 ## 全局节点
 

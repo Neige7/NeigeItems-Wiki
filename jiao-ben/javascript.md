@@ -1,5 +1,9 @@
 # JavaScript
 
+## 路径
+
+所有脚本文件应存放于plugins/NeigeItems/Scripts文件夹
+
 ## 运行前提
 
 脚本文件被正常识别的前提条件是：它返回了该文件的全局对象

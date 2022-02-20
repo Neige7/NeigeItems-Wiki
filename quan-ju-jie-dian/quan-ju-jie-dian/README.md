@@ -2,11 +2,11 @@
 
 ## 路径
 
-全局节点配置文件可以存放于plugins/NeigeItems/GlobalSections文件夹
+所有全局节点配置文件应存放于plugins/NeigeItems/GlobalSections文件夹
 
 重复 ID 的节点仍然会被加载，但可能互相覆盖
 
-最后哪个物品活下来。。。随缘了属于是
+最后哪个节点活下来。。。随缘了属于是
 
 ## 配置
 

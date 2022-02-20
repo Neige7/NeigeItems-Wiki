@@ -168,6 +168,18 @@ ExampleItem:
   - HIDE_DESTROYS
   # 物品颜色(适用于药水/皮革装备)
   color: 65535
+  # 额外选项
+  options:
+    # 消耗选项
+    consume:
+      # 冷却时间(单位是ms)
+      cooldown: 3000
+      # 每次消耗物品数量
+      amount: 1
+      # 左键行为是否消耗物品
+      left: true
+      # 右键行为是否消耗物品
+      right: true
   # 物品NBT
   nbt:
     # NBT中也可以随机调用节点
@@ -213,6 +225,14 @@ ExampleItem:
     js-1:
       type: js
       path: ExampleScript.js::main
+ExampleItem2:
+  material: STONE
+  options:
+    consume:
+      cooldown: 3000
+      amount: 10
+      left: true
+      right: true
 
 ```
 {% endtab %}
@@ -230,6 +250,49 @@ function main(sections, player) {
 load = () => {return this}
 load()
 
+```
+{% endtab %}
+
+{% tab title="ItemActions/ExampleAction.yml" %}
+```
+# 物品ID
+ExampleItem:
+  # 左键执行指令
+  left:
+    # 后台执行
+    console:
+    - "say He's name is %player_name%"
+    # 玩家执行
+    player:
+    - "say My name is %player_name%"
+  # 右键执行指令
+  right: 
+    console:
+    - "say He's name is %player_name%"
+    player:
+    - "say My name is %player_name%"
+  # 左/右键都会执行的指令
+  all: 
+    console:
+    - "say He's name is %player_name%"
+    player:
+    - "say My name is %player_name%"
+ExampleItem2:
+  left: 
+    console:
+    - "say He's name is %player_name%"
+    player:
+    - "say My name is %player_name%"
+  right: 
+    console:
+    - "say He's name is %player_name%"
+    player:
+    - "say My name is %player_name%"
+  all: 
+    console:
+    - "say He's name is %player_name%"
+    player:
+    - "say My name is %player_name%"
 ```
 {% endtab %}
 {% endtabs %}
