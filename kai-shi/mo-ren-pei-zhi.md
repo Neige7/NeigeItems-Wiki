@@ -233,6 +233,11 @@ ExampleItem2:
       amount: 10
       left: true
       right: true
+ExampleItem3:
+  material: STONE
+  options:
+    # 物品使用冷却
+    cooldown: 3000
 
 ```
 {% endtab %}
@@ -278,16 +283,12 @@ ExampleItem:
     player:
     - "say My name is %player_name%"
 ExampleItem2:
-  left: 
+  all: 
     console:
     - "say He's name is %player_name%"
     player:
     - "say My name is %player_name%"
-  right: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+ExampleItem3:
   all: 
     console:
     - "say He's name is %player_name%"
