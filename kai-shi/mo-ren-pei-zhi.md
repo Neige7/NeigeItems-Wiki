@@ -1,0 +1,235 @@
+# 默认配置
+
+{% tabs %}
+{% tab title="config.yml" %}
+```
+Main:
+  # 物品管理指令
+  NeigeItemManagerCommand: ni
+  # MM物品默认保存路径
+  MMItemsPath: MMItems.yml
+  # 不进行保存的NBT键
+  ignoreKeys:
+  - HideFlags
+  - Enchantments
+  - VARIABLES_DATA
+  - ench
+Messages:
+  # 玩家不在线提示
+  invalidPlayer: §e[NI] §6玩家不在线或不存在
+  # 给予成功提示
+  successInfo: §e[NI] §6成功给予 §f{player} §a{amount} §6个 §f{name}
+  # 被给予成功提示(设置为""则不进行提示)
+  givenInfo: §e[NI] §6你得到了 §a{amount} §6个 §f{name}
+  # 给予成功提示
+  dropSuccessInfo: §e[NI] §6成功在 §a{world} §6的 §a{x},{y},{z} §6掉落了 §a{amount} §6个 §f{name}
+  # 未知物品提示
+  unknownItem: §e[NI] §6找不到ID为 §a{itemID} §6的物品
+  # 对应ID物品已存在提示
+  existedKey: §e[NI] §6已存在ID为 §a{itemID} §6的物品
+  # 未知解析对象提示
+  invalidPaser: §e[NI] §6不能针对后台解析物品, 请指定一个玩家
+  # 保存成功提示
+  successSaveInfo: §e[NI] §6成功将 §f{name} §6以ID §a{itemID} §6保存至 §a{path}
+  # MM物品转换完毕提示
+  mMImportSuccessInfo: §e[NI] §6成功将所有MM物品保存至 §a{path}
+  # 不要保存空气提示
+  airItem: §e[NI] §6请不要试图保存空气, 谢谢合作
+  # 输入无效数字提示
+  invalidAmount: §e[NI] §6无效数字
+  # 输入无效世界提示
+  invalidWorld: §e[NI] §6无效世界
+  # 输入无效坐标提示
+  invalidLocation: §e[NI] §6无效坐标
+  # 权限不足提示
+  insufficientPermissions: §e[NI] §6权限不足
+  # 重载完毕提示
+  reloadedMessage: §e[NI] §6重载完毕
+  # 无效NBT提示
+  invalidNBT: §6[NI] §cNBT加载失败, 请勿在列表型NBT中混用键值对, 数字及字符串
+  # 错误物品提示
+  invalidItem: '§6[NI] §c物品加载失败, 物品可能缺损数据, 物品ID: §6{itemID}'
+  # 给予失败提示
+  failureInfo: '§e[NI] §6物品给予失败, 可能原因: 物品未配置材质/玩家已下线'
+  # 帮助信息
+  helpMessages:
+  - §6====================§eNeigeItems§6====================
+  - §6==================[]为必填, ()为选填==================
+  - §e/ni §flist (页码) §7> 查看所有NI物品
+  - §e/ni §fget [物品ID] (数量) (是否反复随机) (指向数据) §7> 根据ID获取NI物品
+  - §e/ni §fgive [玩家ID] [物品ID] (数量) (是否反复随机) (指向数据) §7> 根据ID给予NI物品
+  - §e/ni §fgiveAll [物品ID] (数量) (是否反复随机) (指向数据) §7> 根据ID给予所有人NI物品
+  - §e/ni §fdrop [物品ID] [数量] [世界名] [X坐标] [Y坐标] [Z坐标] (是否反复随机) (物品解析对象) (指向数据) §7>
+    于指定位置掉落NI物品
+  - §e/ni §fsave [物品ID] (保存路径) §7> 将手中物品以对应ID保存至对应路径
+  - §e/ni §fcover [物品ID] (保存路径) §7> 将手中物品以对应ID覆盖至对应路径
+  - §e/ni §fmm load [物品ID] (保存路径) §7> 将对应ID的MM物品保存为NI物品
+  - §e/ni §fmm cover [物品ID] (保存路径) §7> 将对应ID的MM物品覆盖为NI物品
+  - §e/ni §fmm loadAll (保存路径) §7> 将全部MM物品转化为NI物品
+  - §e/ni §fmm get [物品ID] (数量) §7> 根据ID获取MM物品
+  - §e/ni §fmm give [玩家ID] [物品ID] (数量) §7> 根据ID给予MM物品
+  - §e/ni §fmm giveAll [物品ID] (数量) §7> 根据ID给予所有人MM物品
+  - §e/ni §freload §7> 重新加载NI物品
+  - §e/ni §fhelp §7> 查看帮助信息
+  - §6=================================================
+# 物品列表格式
+ItemList:
+  Prefix: §6===========§eNeigeItems§6===========
+  Suffix: §6======<< §e{prev} §f{current}§e/§f{total} §e{next} §6>>======
+  ItemAmount: 10
+  ItemFormat: §6{index}. §a{ID} §6- §f{name}
+  Prev: 上一页
+  Next: 下一页
+
+```
+{% endtab %}
+
+{% tab title="GlobalSections/ExampleSection.yml" %}
+```
+global-strings-1:
+  # 随机字符节点
+  type: strings
+  values:
+  - test1
+  - test2
+global-number-1:
+  # 随机数节点
+  type: number
+  # 随机数最小值
+  min: 1
+  # 随机数最大值
+  max: 2
+  # 小数保留位数
+  fixed: 3
+global-calculation-1:
+  # 公式节点
+  type: calculation
+  # 计算公式
+  formula: 1+2+3<global-number-1>
+  # 公式结果最小值
+  min: 1
+  # 公式结果最大值
+  max: 100
+  # 小数保留位数
+  fixed: 3
+global-weight-1:
+  # 权重字符串节点
+  type: weight
+  values:
+  # 权重::字符串内容
+  - 5::第一行
+  - 1::第二行
+global-js-1:
+  # JavaScript节点
+  type: js
+  # 脚本路径
+  path: ExampleScript.js::main
+
+```
+{% endtab %}
+
+{% tab title="Items/ExampleItem.yml" %}
+```
+ExampleItem:
+  # 物品材质
+  material: LEATHER_HELMET
+  # 物品CustomModelData(适用于1.14+)
+  custommodeldata: 1
+  # 物品损伤值
+  damage: 1
+  # 物品名
+  name: §6一件皮革甲
+  # 物品Lore
+  lore:
+  - 'PAPI变量测试: %player_level%'
+  - '私有字符串节点测试: <strings-1>'
+  - '私有随机数节点测试: <number-1>'
+  - '私有公式节点测试: <calculation-1>'
+  - '私有权重节点测试: <weight-1>'
+  - '私有JavaScript节点测试: <js-1>'
+  - '即时声明字符串节点测试: <string-2::strings::number-1_weight-2>'
+  - '即时声明随机数节点测试: <number-2::number::0_10_0>'
+  - '即时声明公式节点测试: <calculation-2::calculation::1+1+3+<number-1>_5>'
+  - '即时声明权重节点测试: <weight-2::weight::5::权重文本1_1::权重文本2>'
+  - '即时声明JavaScript节点测试: <js-2::js::ExampleScript.js::main>'
+  - '全局节点调用测试: <global-strings-1>'
+  - '嵌套识别测试: <<string-2>>'
+  - '即时节点调用测试: <string-2>'
+  - '文本中小于号请添加反斜杠, 防止错误识别'
+  - '形如: \<\<\<\<\<\<\<'
+  - '请尽量避免使用即时声明节点'
+  # 物品附魔
+  enchantments:
+    ARROW_DAMAGE: 1
+    ARROW_KNOCKBACK: 1
+  # 物品隐藏标识
+  hideflags:
+  - HIDE_ATTRIBUTES
+  - HIDE_DESTROYS
+  # 物品颜色(适用于药水/皮革装备)
+  color: 65535
+  # 物品NBT
+  nbt:
+    # NBT中也可以随机调用节点
+    <test3::strings::文本1_文本2_文本3_文本4>: 114514
+    # 可以在NBT中编辑物品的原版属性
+    AttributeModifiers:
+    - Amount: 10
+      AttributeName: minecraft:generic.max_health
+      Operation: 0
+      UUID:
+      - 0
+      - 31453
+      - 0
+      - 59664
+      Name: generic.maxHealth
+  # 引用的全局节点
+  globalsections:
+  - global-strings-1
+  - global-number-1
+  # 物品私有节点
+  sections:
+    strings-1:
+      type: strings
+      values:
+      - 测试文本1
+      - 测试文本2
+    number-1:
+      type: number
+      min: 1
+      max: 2
+      fixed: 3
+    calculation-1:
+      type: calculation
+      formula: 1+2+3<number-1>+<number-1>
+      min: 1
+      max: 100
+      fixed: 3
+    weight-1:
+      type: weight
+      values:
+      - 5::第一行
+      - 1::第二行
+    js-1:
+      type: js
+      path: ExampleScript.js::main
+
+```
+{% endtab %}
+
+{% tab title="Scripts/ExampleScript.js" %}
+```
+/**
+ * @param sections json {节点键: 节点值}
+ * @param player Player 待解析玩家
+ */
+function main(sections, player) {
+    return sections["strings-1"]
+}
+
+load = () => {return this}
+load()
+
+```
+{% endtab %}
+{% endtabs %}
