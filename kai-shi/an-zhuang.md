@@ -7,12 +7,8 @@
 ## 安装Pouvoir
 
 {% embed url="https://github.com/Glom-c/Pouvoir" %}
-GitHub-Pouvoir
-{% endembed %}
 
 {% embed url="https://www.mcbbs.net/forum.php?mod=viewthread&tid=1221977" %}
-MCBBS-Pouvoir
-{% endembed %}
 
 点击上方链接，通过GitHub或MCBBS下载Pouvoir
 
@@ -21,8 +17,6 @@ MCBBS-Pouvoir
 ## 安装NeigeItems
 
 {% embed url="https://github.com/Neige7/NeigeItems" %}
-GitHub-NeigeItems
-{% endembed %}
 
 点击上方链接，通过GitHub下载NeigeItems.js文件
 
