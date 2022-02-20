@@ -34,7 +34,7 @@
 * [物品配置](wu-pin/wu-pin-pei-zhi.md)
 * [额外选项](wu-pin/e-wai-xuan-xiang/README.md)
   * [物品消耗](wu-pin/e-wai-xuan-xiang/wu-pin-xiao-hao.md)
-  * [物品冷却](wu-pin/e-wai-xuan-xiang/wu-pin-leng-que.md)
+  * [物品指令冷却](wu-pin/e-wai-xuan-xiang/wu-pin-zhi-ling-leng-que.md)
   * [物品指令](wu-pin/e-wai-xuan-xiang/wu-pin-zhi-ling.md)
 
 ## 全局节点

@@ -25,8 +25,8 @@ options下的内容即为所谓的“额外选项”
 [wu-pin-xiao-hao.md](wu-pin-xiao-hao.md)
 {% endcontent-ref %}
 
-{% content-ref url="wu-pin-leng-que.md" %}
-[wu-pin-leng-que.md](wu-pin-leng-que.md)
+{% content-ref url="wu-pin-zhi-ling-leng-que.md" %}
+[wu-pin-zhi-ling-leng-que.md](wu-pin-zhi-ling-leng-que.md)
 {% endcontent-ref %}
 
 {% content-ref url="wu-pin-zhi-ling.md" %}
