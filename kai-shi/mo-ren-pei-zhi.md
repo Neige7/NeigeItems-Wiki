@@ -170,16 +170,7 @@ ExampleItem:
   color: 65535
   # 额外选项
   options:
-    # 消耗选项
-    consume:
-      # 冷却时间(单位是ms)
-      cooldown: 3000
-      # 每次消耗物品数量
-      amount: 1
-      # 左键行为是否消耗物品
-      left: true
-      # 右键行为是否消耗物品
-      right: true
+    charge: 10
   # 物品NBT
   nbt:
     # NBT中也可以随机调用节点
@@ -227,17 +218,14 @@ ExampleItem:
       path: ExampleScript.js::main
 ExampleItem2:
   material: STONE
-  options:
-    consume:
-      cooldown: 3000
-      amount: 10
-      left: true
-      right: true
 ExampleItem3:
   material: STONE
+ExampleItem4:
+  material: STONE
+  lore:
+  - '物品使用次数: %neigeitems_charge%/%neigeitems_maxCharge%'
   options:
-    # 物品使用冷却
-    cooldown: 3000
+    charge: 10
 
 ```
 {% endtab %}
@@ -262,6 +250,16 @@ load()
 ```
 # 物品ID
 ExampleItem:
+  # 消耗选项
+  consume:
+    # 冷却时间(单位是ms)
+    cooldown: 3000
+    # 每次消耗物品数量
+    amount: 1
+    # 左键行为是否消耗物品
+    left: true
+    # 右键行为是否消耗物品
+    right: true
   # 左键执行指令
   left:
     # 后台执行
@@ -283,17 +281,36 @@ ExampleItem:
     player:
     - "say My name is %player_name%"
 ExampleItem2:
+  consume:
+    cooldown: 3000
+    amount: 10
+    left: true
+    right: true
   all: 
     console:
     - "say He's name is %player_name%"
     player:
     - "say My name is %player_name%"
 ExampleItem3:
+  # 物品使用冷却
+  cooldown: 3000
   all: 
     console:
     - "say He's name is %player_name%"
     player:
     - "say My name is %player_name%"
+ExampleItem4:
+  consume:
+    cooldown: 3000
+    amount: 1
+    left: true
+    right: true
+  all: 
+    console:
+    - "say He's name is %player_name%"
+    player:
+    - "say My name is %player_name%"
+
 ```
 {% endtab %}
 {% endtabs %}

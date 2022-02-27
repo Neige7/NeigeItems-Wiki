@@ -32,19 +32,19 @@
 ## 物品
 
 * [物品配置](wu-pin/wu-pin-pei-zhi.md)
+* [物品动作](wu-pin/wu-pin-dong-zuo.md)
 * [额外选项](wu-pin/e-wai-xuan-xiang/README.md)
-  * [物品消耗](wu-pin/e-wai-xuan-xiang/wu-pin-xiao-hao.md)
-  * [物品指令冷却](wu-pin/e-wai-xuan-xiang/wu-pin-zhi-ling-leng-que.md)
-  * [物品指令](wu-pin/e-wai-xuan-xiang/wu-pin-zhi-ling.md)
+  * [使用次数](wu-pin/e-wai-xuan-xiang/shi-yong-ci-shu.md)
+* [物品变量](wu-pin/wu-pin-bian-liang.md)
 
 ## 随机节点
 
-* [全局/私有节点](sui-ji-jie-dian/quan-ju-si-you-jie-dian/README.md)
-  * [字符串节点](sui-ji-jie-dian/quan-ju-si-you-jie-dian/zi-fu-chuan-jie-dian.md)
-  * [随机数节点](sui-ji-jie-dian/quan-ju-si-you-jie-dian/sui-ji-shu-jie-dian.md)
-  * [公式节点](sui-ji-jie-dian/quan-ju-si-you-jie-dian/gong-shi-jie-dian.md)
-  * [权重节点](sui-ji-jie-dian/quan-ju-si-you-jie-dian/quan-zhong-jie-dian.md)
-  * [JavaScript节点](sui-ji-jie-dian/quan-ju-si-you-jie-dian/javascript-jie-dian.md)
+* [私有/全局节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/README.md)
+  * [字符串节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/zi-fu-chuan-jie-dian.md)
+  * [随机数节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/sui-ji-shu-jie-dian.md)
+  * [公式节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/gong-shi-jie-dian.md)
+  * [权重节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/quan-zhong-jie-dian.md)
+  * [JavaScript节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/javascript-jie-dian.md)
 * [即时声明节点](sui-ji-jie-dian/ji-shi-sheng-ming-jie-dian/README.md)
   * [字符串节点](sui-ji-jie-dian/ji-shi-sheng-ming-jie-dian/zi-fu-chuan-jie-dian.md)
   * [随机数节点](sui-ji-jie-dian/ji-shi-sheng-ming-jie-dian/sui-ji-shu-jie-dian.md)

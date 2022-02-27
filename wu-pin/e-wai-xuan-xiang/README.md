@@ -1,34 +1,20 @@
 # 额外选项
 
-## 配置
-
-以默认物品配置为例
+以默认配置为例:&#x20;
 
 ```
-ExampleItem2:
+ExampleItem4:
   material: STONE
+  lore:
+  - '物品使用次数: %neigeitems_charge%/%neigeitems_maxCharge%'
   options:
-    consume:
-      cooldown: 3000
-      amount: 10
-      left: true
-      right: true
+    charge: 10
 ```
 
-options下的内容即为所谓的“额外选项”
+options下的所有配置项, 即为"额外选项"
 
-额外选项可以为物品添加诸多功能
+以下为所有额外选项列表:&#x20;
 
-具体使用方法如下
-
-{% content-ref url="wu-pin-xiao-hao.md" %}
-[wu-pin-xiao-hao.md](wu-pin-xiao-hao.md)
-{% endcontent-ref %}
-
-{% content-ref url="wu-pin-zhi-ling-leng-que.md" %}
-[wu-pin-zhi-ling-leng-que.md](wu-pin-zhi-ling-leng-que.md)
-{% endcontent-ref %}
-
-{% content-ref url="wu-pin-zhi-ling.md" %}
-[wu-pin-zhi-ling.md](wu-pin-zhi-ling.md)
+{% content-ref url="shi-yong-ci-shu.md" %}
+[shi-yong-ci-shu.md](shi-yong-ci-shu.md)
 {% endcontent-ref %}
