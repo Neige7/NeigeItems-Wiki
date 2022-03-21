@@ -19,7 +19,7 @@ function main(sections, player) {
     return sections["strings-1"]
 }
 
-load = () => {return this}
+load = function() {return this}
 load()
 
 ```
@@ -29,7 +29,7 @@ load()
 在该文件中的体现便是最后的两行：
 
 ```
-load = () => {return this}
+load = function() {return this}
 load()
 ```
 
@@ -39,7 +39,7 @@ load()
 
 每个函数在被调用时都会被传入两个对象
 
-* Sections 即当前物品的所有指向数据
+* sections 即当前物品的所有指向数据
 * player 即作为该物品解析对象的玩家
 
 以默认脚本文件为例
@@ -53,7 +53,7 @@ function main(sections, player) {
     return sections["strings-1"]
 }
 
-load = () => {return this}
+load = function() {return this}
 load()
 
 ```

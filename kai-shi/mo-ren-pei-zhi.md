@@ -240,7 +240,7 @@ function main(sections, player) {
     return sections["strings-1"]
 }
 
-load = () => {return this}
+load = function() {return this}}
 load()
 
 ```
