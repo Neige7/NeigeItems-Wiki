@@ -33,8 +33,6 @@ Messages:
   successSaveInfo: §e[NI] §6成功将 §f{name} §6以ID §a{itemID} §6保存至 §a{path}
   # MM物品转换完毕提示
   mMImportSuccessInfo: §e[NI] §6成功将所有MM物品保存至 §a{path}
-  # 物品冷却提示
-  itemCooldown: §e物品冷却中! 请等待{time}秒
   # 物品列表内, 点击获取物品提示
   clickGiveMessage: §e点击获取该物品
   # 不要保存空气提示
@@ -47,6 +45,10 @@ Messages:
   invalidLocation: §e[NI] §6无效坐标
   # 权限不足提示
   insufficientPermissions: §e[NI] §6权限不足
+  # 未发现前置插件提示
+  invalidPlugin: §e[NI] §6未发现前置插件: {plugin}
+  # 物品冷却提示
+  itemCooldown: §e物品冷却中! 请等待{time}秒
   # 重载完毕提示
   reloadedMessage: §e[NI] §6重载完毕
   # 无效NBT提示
