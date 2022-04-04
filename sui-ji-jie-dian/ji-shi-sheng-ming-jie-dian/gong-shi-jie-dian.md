@@ -1,7 +1,7 @@
 # 公式节点
 
 ```
-<instantCalculation-1::calculation::1+1+3+%player_level%_5_100_0>
+<calculation::1+1+3+%player_level%_5_100_0>
 ```
 
 * 参数1 计算公式

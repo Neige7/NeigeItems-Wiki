@@ -33,6 +33,10 @@ Messages:
   successSaveInfo: §e[NI] §6成功将 §f{name} §6以ID §a{itemID} §6保存至 §a{path}
   # MM物品转换完毕提示
   mMImportSuccessInfo: §e[NI] §6成功将所有MM物品保存至 §a{path}
+  # 物品冷却提示
+  itemCooldown: §e物品冷却中! 请等待{time}秒
+  # 物品列表内, 点击获取物品提示
+  clickGiveMessage: §e点击获取该物品
   # 不要保存空气提示
   airItem: §e[NI] §6请不要试图保存空气, 谢谢合作
   # 输入无效数字提示
@@ -147,14 +151,13 @@ ExampleItem:
   - '私有公式节点测试: <calculation-1>'
   - '私有权重节点测试: <weight-1>'
   - '私有JavaScript节点测试: <js-1>'
-  - '即时声明字符串节点测试: <string-2::strings::number-1_weight-2>'
-  - '即时声明随机数节点测试: <number-2::number::0_10_0>'
-  - '即时声明公式节点测试: <calculation-2::calculation::1+1+3+<number-1>_5>'
-  - '即时声明权重节点测试: <weight-2::weight::5::权重文本1_1::权重文本2>'
-  - '即时声明JavaScript节点测试: <js-2::js::ExampleScript.js::main>'
+  - '即时声明字符串节点测试: <strings::number-1_weight-1>'
+  - '即时声明随机数节点测试: <number::0_10_0>'
+  - '即时声明公式节点测试: <calculation::1+1+3+<number-1>_5>'
+  - '即时声明权重节点测试: <weight::5::权重文本1_1::权重文本2>'
+  - '即时声明JavaScript节点测试: <js::ExampleScript.js::main>'
   - '全局节点调用测试: <global-strings-1>'
-  - '嵌套识别测试: <<string-2>>'
-  - '即时节点调用测试: <string-2>'
+  - '嵌套识别测试: <<strings-1>>'
   - '文本中小于号请添加反斜杠, 防止错误识别'
   - '形如: \<\<\<\>\>\>'
   - '请尽量避免使用即时声明节点'
@@ -174,7 +177,7 @@ ExampleItem:
   # 物品NBT
   nbt:
     # NBT中也可以随机调用节点
-    <test3::strings::文本1_文本2_文本3_文本4>: 114514
+    <strings::文本1_文本2_文本3_文本4>: 114514
     # 可以在NBT中编辑物品的原版属性
     AttributeModifiers:
     - Amount: 10
@@ -240,7 +243,7 @@ function main(sections, player) {
     return sections["strings-1"]
 }
 
-load = function() {return this}}
+load = function() {return this}
 load()
 
 ```

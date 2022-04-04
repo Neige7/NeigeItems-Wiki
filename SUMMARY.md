@@ -52,6 +52,7 @@
   * [权重节点](sui-ji-jie-dian/ji-shi-sheng-ming-jie-dian/quan-zhong-jie-dian.md)
   * [Javascript节点](sui-ji-jie-dian/ji-shi-sheng-ming-jie-dian/javascript-jie-dian.md)
 * [节点调用](sui-ji-jie-dian/jie-dian-tiao-yong.md)
+* [高级应用](sui-ji-jie-dian/gao-ji-ying-yong.md)
 
 ## 脚本
 
