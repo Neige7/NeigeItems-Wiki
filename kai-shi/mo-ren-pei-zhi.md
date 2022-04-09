@@ -158,6 +158,7 @@ ExampleItem:
   - '即时声明随机数节点测试: <number::0_10_0>'
   - '即时声明公式节点测试: <calculation::1+1+3+<number-1>_5>'
   - '即时声明权重节点测试: <weight::5::权重文本1_1::权重文本2>'
+  - '即时声明papi节点测试: <papi::<papiString-1><papiString-2>>'
   - '即时声明JavaScript节点测试: <js::ExampleScript.js::main>'
   - '全局节点调用测试: <global-strings-1>'
   - '嵌套识别测试: <<strings-1>>'
@@ -222,6 +223,14 @@ ExampleItem:
     js-1:
       type: js
       path: ExampleScript.js::main
+    papiString-1:
+      type: strings
+      values:
+      - "%player_"
+    papiString-2:
+      type: strings
+      values:
+      - "name%"
 ExampleItem2:
   material: STONE
 ExampleItem3:
