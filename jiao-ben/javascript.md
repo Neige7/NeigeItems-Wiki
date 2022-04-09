@@ -9,6 +9,7 @@ NeigeItems 的 JavaScript 节点目前提供以下对象
 提供以下函数
 
 * `vars(String id)` 根据ID解析节点
+* `papi(String text)` 解析papi变量
 
 ## 路径
 
