@@ -238,12 +238,8 @@ ExampleItem4:
 
 {% tab title="Scripts/ExampleScript.js" %}
 ```
-/**
- * @param sections json {节点键: 节点值}
- * @param player Player 待解析玩家
- */
-function main(sections, player) {
-    return sections["strings-1"]
+function main() {
+    return vars("strings-1") + player.getName()
 }
 
 load = function() {return this}

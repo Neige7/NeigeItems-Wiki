@@ -1,5 +1,15 @@
 # JavaScript
 
+## 对象与函数
+
+NeigeItems 的 JavaScript 节点目前提供以下对象
+
+* `player` 即 玩家本身
+
+提供以下函数
+
+* `vars(String id)` 根据ID解析节点
+
 ## 路径
 
 所有脚本文件应存放于plugins/NeigeItems/Scripts文件夹
@@ -11,12 +21,8 @@
 以默认脚本文件为例
 
 ```
-/**
- * @param sections json {节点键: 节点值}
- * @param player Player 待解析玩家
- */
-function main(sections, player) {
-    return sections["strings-1"]
+function main() {
+    return vars("strings-1") + player.getName()
 }
 
 load = function() {return this}
@@ -34,31 +40,4 @@ load()
 ```
 
 如果你无法理解我在说什么，请在你为NeigeItems编写的每个脚本文件最后加上这两行代码
-
-## 函数参数
-
-每个函数在被调用时都会被传入两个对象
-
-* sections 即当前物品的所有指向数据
-* player 即作为该物品解析对象的玩家
-
-以默认脚本文件为例
-
-```
-/**
- * @param sections json {节点键: 节点值}
- * @param player Player 待解析玩家
- */
-function main(sections, player) {
-    return sections["strings-1"]
-}
-
-load = function() {return this}
-load()
-
-```
-
-你需要手动在参数位置写上这两个参数
-
-或者通过arguments\[0]及arguments\[1]调用它们
 
