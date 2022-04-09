@@ -10,6 +10,6 @@
 
 ## 变量列表
 
-%neigeitems\_charge% 物品当前剩余使用次数
+`%neigeitems_charge%` 物品当前剩余使用次数
 
-%neigeitems\_maxCharge% 物品最大使用次数
+`%neigeitems_maxCharge%` 物品最大使用次数
