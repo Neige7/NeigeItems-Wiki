@@ -6,11 +6,9 @@
 
 ## 安装Pouvoir
 
-{% embed url="https://github.com/Glom-c/Pouvoir" %}
+{% embed url="https://github.com/Neige7/NeigeItems" %}
 
-{% embed url="https://www.mcbbs.net/forum.php?mod=viewthread&tid=1221977" %}
-
-点击上方链接，通过GitHub或MCBBS下载Pouvoir
+点击上方链接，通过GitHub下载Pouvoir
 
 将Pouvoir的jar文件丢入plugins文件夹并重启服务器
 
