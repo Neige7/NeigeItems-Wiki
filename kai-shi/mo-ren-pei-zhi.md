@@ -10,10 +10,12 @@ Main:
   MMItemsPath: MMItems.yml
   # 不进行保存的NBT键
   ignoreKeys:
-  - HideFlags
   - Enchantments
   - VARIABLES_DATA
   - ench
+  - Damage
+  - HideFlags
+  - Unbreakable
 Messages:
   # 玩家不在线提示
   invalidPlayer: §e[NI] §6玩家不在线或不存在
