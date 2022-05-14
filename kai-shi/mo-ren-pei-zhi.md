@@ -151,6 +151,7 @@ ExampleItem:
   lore:
   - 'PAPI变量测试: %player_level%'
   - '16进制颜色测试: <#ABCDEF>好耶'
+  - '私有简单节点测试: <simple-1>'
   - '私有字符串节点测试: <strings-1>'
   - '私有随机数节点测试: <number-1>'
   - '私有公式节点测试: <calculation-1>'
@@ -201,6 +202,7 @@ ExampleItem:
   - global-number-1
   # 物品私有节点
   sections:
+    simple-1: <strings::text1_text2_text3>
     strings-1:
       type: strings
       values:
