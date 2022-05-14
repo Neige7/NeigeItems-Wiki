@@ -228,11 +228,11 @@ ExampleItem:
     papiString-1:
       type: strings
       values:
-      - "%player_"
+      - "player_"
     papiString-2:
       type: strings
       values:
-      - "name%"
+      - "name"
 ExampleItem2:
   material: STONE
 ExampleItem3:
