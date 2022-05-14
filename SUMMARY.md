@@ -45,6 +45,7 @@
   * [公式节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/gong-shi-jie-dian.md)
   * [权重节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/quan-zhong-jie-dian.md)
   * [JavaScript节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/javascript-jie-dian.md)
+  * [简单节点](sui-ji-jie-dian/si-you-quan-ju-jie-dian/jian-dan-jie-dian.md)
 * [即时声明节点](sui-ji-jie-dian/ji-shi-sheng-ming-jie-dian/README.md)
   * [字符串节点](sui-ji-jie-dian/ji-shi-sheng-ming-jie-dian/zi-fu-chuan-jie-dian.md)
   * [随机数节点](sui-ji-jie-dian/ji-shi-sheng-ming-jie-dian/sui-ji-shu-jie-dian.md)
