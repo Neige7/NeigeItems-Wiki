@@ -1,6 +1,6 @@
 ---
 description: >-
-  /ni drop [物品ID] [数量] [世界名] [X坐标] [Y坐标] [Z坐标] (是否反复随机) (物品解析对象) (指向数据) >    
+  /ni drop [物品ID] [数量] [世界名] [X坐标] [Y坐标] [Z坐标] [是否反复随机] [物品解析对象] (指向数据) >    
   于指定位置掉落NI物品
 ---
 
@@ -18,3 +18,9 @@ description: >-
 * (指向数据) 字符串化JSON文本\
   &#x20;                 形如{"string-1":"文本文本文本"}\
   &#x20;                 这样物品生成时string-1的值将变为文本文本文本
+
+{% hint style="info" %}
+你可以通过添加技能的方式让MM怪物掉落NI物品，示例如下：
+
+command{c="ni drop 物品ID 数量 \<caster.l.w> \<caster.l.x.#> \<caster.l.y.#> \<caster.l.z.#> true \<target.name>"} @Trigger \~onDeath
+{% endhint %}
