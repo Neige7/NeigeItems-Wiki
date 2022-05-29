@@ -168,6 +168,7 @@ ExampleItem:
   - '文本中小于号请添加反斜杠, 防止错误识别'
   - '形如: \<\<\<\>\>\>'
   - '请尽量避免使用即时声明节点'
+  - "换行符测试\n换行符测试"
   # 物品附魔
   enchantments:
     ARROW_DAMAGE: 1
@@ -198,6 +199,8 @@ ExampleItem:
       Name: generic.maxHealth
   # 引用的全局节点
   globalsections:
+  # 这种直接填写文件名的方式可以直接调用文件内的全部全局节点
+  # - ExampleSection.yml
   - global-strings-1
   - global-number-1
   # 物品私有节点
