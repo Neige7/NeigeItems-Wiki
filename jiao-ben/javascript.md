@@ -10,7 +10,7 @@ NeigeItems 的 JavaScript 节点目前提供以下对象
 
 * `vars(String id)` 根据ID解析节点
 * `papi(String text)` 解析papi变量
-* `papi(String itemID, Player player)` 获取对应ID的NI物品
+* `getItem(String itemID, Player player)` 获取对应ID的NI物品
 
 ## 路径
 
