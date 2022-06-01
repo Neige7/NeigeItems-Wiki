@@ -12,8 +12,8 @@
 
 详见默认配置
 
-{% content-ref url="../kai-shi/mo-ren-pei-zhi.md" %}
-[mo-ren-pei-zhi.md](../kai-shi/mo-ren-pei-zhi.md)
+{% content-ref url="../../kai-shi/mo-ren-pei-zhi.md" %}
+[mo-ren-pei-zhi.md](../../kai-shi/mo-ren-pei-zhi.md)
 {% endcontent-ref %}
 
 ## 结构

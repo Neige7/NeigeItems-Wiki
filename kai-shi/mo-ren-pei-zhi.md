@@ -240,6 +240,40 @@ ExampleItem4:
   - '物品使用次数: %neigeitems_charge%/%neigeitems_maxCharge%'
   options:
     charge: 10
+    
+# 一个测试模板
+template1:
+  material: IRON_SWORD
+  lore:
+  - "&e攻击伤害: &f<damage>"
+  nbt:
+    MMOITEMS_ATTACK_DAMAGE: (Double) <damage>
+# 一个测试模板
+template2:
+  material: DIAMOND_SWORD
+
+# 一个全局继承测试, 它继承了"template1"的所有内容
+templateItem1:
+  inherit: template1
+  name: §f物品继承测试
+  sections:
+    damage: 100
+# 一个部分继承测试, 它继承了"template1"的lore, 以及"template2"的material
+templateItem2:
+  inherit: 
+    lore: template1
+    material: template2
+  name: §f物品继承测试
+  sections:
+    damage: 100
+# 一个顺序继承测试, 它将按顺序进行节点继承. 先继承"template1"的所有内容，再继承"template2"的所有内容
+templateItem3:
+  inherit:
+  - template1
+  - template2
+  name: §f物品继承测试
+  sections:
+    damage: 100'
 
 ```
 {% endtab %}

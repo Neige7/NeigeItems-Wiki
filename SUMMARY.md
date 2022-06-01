@@ -31,7 +31,8 @@
 
 ## 物品
 
-* [物品配置](wu-pin/wu-pin-pei-zhi.md)
+* [物品配置](wu-pin/wu-pin-pei-zhi/README.md)
+  * [模板继承](wu-pin/wu-pin-pei-zhi/mo-ban-ji-cheng.md)
 * [物品动作](wu-pin/wu-pin-dong-zuo.md)
 * [额外选项](wu-pin/e-wai-xuan-xiang/README.md)
   * [使用次数](wu-pin/e-wai-xuan-xiang/shi-yong-ci-shu.md)
