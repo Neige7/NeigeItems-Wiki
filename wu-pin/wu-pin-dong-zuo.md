@@ -26,27 +26,19 @@ ExampleItem:
     left: true
     right: true
   left:
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
   right: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
   all: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
 ExampleItem3:
   cooldown: 3000
   all: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
 ```
 
 * ExampleItem 即物品ID，对应ID的物品交互后将触发下列指令组
@@ -56,8 +48,7 @@ ExampleItem3:
     * left 左键点击物品是否消耗
     * right 右键点击物品是否消耗
   * left 左键行为将触发下方指令组
-    * console 下列指令将由后台执行
-    * player 下列指令将由玩家本人执行
+    * 物品动作
   * right 右键行为将触发下方指令组
   * all 左/右键行为都将触发下方指令组
 * ExampleItem3 物品ID
