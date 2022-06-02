@@ -90,7 +90,7 @@ description: 全部动作支持papi变量
 > 延迟动作执行(单位是tick)
 
 ```yaml
-- 'dalay: 10'
+- 'delay: 10'
 ```
 
 ## 终止
