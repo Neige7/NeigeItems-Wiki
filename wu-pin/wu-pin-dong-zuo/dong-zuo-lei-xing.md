@@ -1,0 +1,102 @@
+---
+description: 全部动作支持papi变量
+---
+
+# 动作类型
+
+## 发送文本
+
+> 向玩家发送一条消息(可使用&作为颜色符号)
+
+```yaml
+- 'tell: &eHello'
+```
+
+## 发送文本
+
+> 向玩家发送一条消息(不将&解析为颜色符号)
+
+```yaml
+- 'tellNoColor: §eHello, can you see "&"?'
+```
+
+## 强制聊天
+
+> 强制玩家发送一条消息(不将&解析为颜色符号)
+
+```yaml
+- 'chat: see, I can send "&"!'
+```
+
+## 强制聊天
+
+> 强制玩家发送一条消息(可使用&作为颜色符号)
+
+```yaml
+- 'chatWithColor: see, I can send "&"!'
+```
+
+## 执行指令(玩家)
+
+> 强制玩家执行一条指令(可使用&作为颜色符号)
+
+```yaml
+- 'command: say Hello'
+- 'player: say Hello'
+```
+
+## 执行指令(玩家)
+
+> 强制玩家执行一条指令(不将&解析为颜色符号)
+
+```yaml
+- 'commandNoColor: say Hello'
+```
+
+## 执行指令(后台)
+
+> 后台执行一条指令(可使用&作为颜色符号)
+
+```yaml
+- 'console: say Hello'
+```
+
+## 执行指令(后台)
+
+> 后台执行一条指令(不将&解析为颜色符号)
+
+```yaml
+- 'consoleNoColor: say Hello'
+```
+
+## 给予金币(Vault)
+
+> 给予玩家一定数量金币
+
+```yaml
+- 'giveMoney: 100'
+```
+
+## 扣除金币(Vault)
+
+> 扣除玩家一定数量金币
+
+```yaml
+- 'takeMoney: 100'
+```
+
+## 延时
+
+> 延迟动作执行(单位是tick)
+
+```yaml
+- 'dalay: 10'
+```
+
+## 终止
+
+> 终止动作执行
+
+```yaml
+- 'return'
+```
