@@ -50,7 +50,9 @@ ExampleItem3:
   * left 左键行为将触发下方指令组
     * 物品动作
   * right 右键行为将触发下方指令组
+    * 物品动作
   * all 左/右键行为都将触发下方指令组
+    * 物品动作
 * ExampleItem3 物品ID
   * cooldown 代表物品使用冷却（不消耗）
 
