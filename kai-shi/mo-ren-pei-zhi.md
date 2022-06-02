@@ -306,24 +306,18 @@ ExampleItem:
     right: true
   # 左键执行指令
   left:
-    # 后台执行
-    console:
-    - "say He's name is %player_name%"
-    # 玩家执行
-    player:
-    - "say My name is %player_name%"
+  # 后台执行
+  - "console: say He's name is %player_name%"
+  # 玩家执行
+  - "command: say My name is %player_name%"
   # 右键执行指令
   right: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
   # 左/右键都会执行的指令
   all: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
 ExampleItem2:
   consume:
     cooldown: 3000
@@ -331,18 +325,14 @@ ExampleItem2:
     left: true
     right: true
   all: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
 ExampleItem3:
   # 物品使用冷却
   cooldown: 3000
   all: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
 ExampleItem4:
   consume:
     cooldown: 3000
@@ -350,10 +340,8 @@ ExampleItem4:
     left: true
     right: true
   all: 
-    console:
-    - "say He's name is %player_name%"
-    player:
-    - "say My name is %player_name%"
+  - "console: say He's name is %player_name%"
+  - "command: say My name is %player_name%"
 
 ```
 {% endtab %}
