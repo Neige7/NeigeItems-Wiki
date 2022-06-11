@@ -275,6 +275,18 @@ templateItem3:
   sections:
     damage: 100'
 
+inheritSectionTest:
+  material: STONE
+  lore:
+  - <templateTest>
+  - <inheritTest>
+  - <inherit::templateTest>
+  sections:
+    templateTest: <strings::text1_text2_text3>
+    inheritTest:
+      type: inherit
+      template: templateTest
+
 ```
 {% endtab %}
 
