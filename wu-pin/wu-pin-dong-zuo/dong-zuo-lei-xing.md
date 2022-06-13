@@ -33,7 +33,7 @@ description: 全部动作支持papi变量
 > 强制玩家发送一条消息(可使用&作为颜色符号)
 
 ```yaml
-- 'chatWithColor: see, I can send "&"!'
+- 'chatWithColor: &eHello'
 ```
 
 ## 执行指令(玩家)
