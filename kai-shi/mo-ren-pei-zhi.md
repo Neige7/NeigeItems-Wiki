@@ -51,6 +51,14 @@ Messages:
   invalidItem: '§6[NI] §c物品加载失败, 物品可能缺损数据, 物品ID: §6{itemID}'
   # 给予失败提示
   failureInfo: '§e[NI] §6物品给予失败, 可能原因: 物品未配置材质/玩家已下线'
+  # 缺少前置插件提示
+  invalidPlugin: '§e[NI] §6未发现前置插件: {plugin}'
+  # 未指定物品解析对象提示
+  invalidParser: §e[NI] §6不能针对后台解析物品, 请指定一个玩家
+  # 物品冷却提示
+  itemCooldown: §e物品冷却中! 请等待{time}秒
+  # 物品列表内, 点击获取物品提示
+  clickGiveMessage: §e点击获取该物品
   # 帮助信息
   helpMessages:
   - §6====================§eNeigeItems§6====================
