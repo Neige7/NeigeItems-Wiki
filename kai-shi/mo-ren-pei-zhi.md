@@ -294,6 +294,17 @@ inheritSectionTest:
     inheritTest:
       type: inherit
       template: templateTest
+actionTest:
+  material: STONE
+  nbt:
+    test1: "666"
+    test2: 
+      test3: "777"
+    test4:
+    - "888"
+    - "999"
+  sections:
+    test: "000"
 
 ```
 {% endtab %}
@@ -362,7 +373,13 @@ ExampleItem4:
   all: 
   - "console: say He's name is %player_name%"
   - "command: say My name is %player_name%"
-
+actionTest:
+  all: 
+  - "console: say 名为test1的NBT的值为: <nbt::test1>"
+  - "console: say 名为test2.test3的NBT的值为: <nbt::test2.test3>"
+  - "console: say 名为test4.0的NBT的值为: <nbt::test4.0>"
+  - "console: say 名为test4.1的NBT的值为: <nbt::test4.1>"
+  - "console: say 名为test的节点的值为: <data::test>"
 ```
 {% endtab %}
 {% endtabs %}
