@@ -24,7 +24,11 @@ NeigeItems 的 JavaScript 节点目前提供以下对象
 
 ```
 function main() {
-    return vars("strings-1") + player.getName()
+    if (typeof player != "undefined") {
+        return vars("strings-1") + player.getName()
+    } else {
+        return vars("strings-1")
+    }
 }
 
 load = function() {return this}
