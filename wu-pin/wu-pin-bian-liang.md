@@ -14,9 +14,15 @@
 
 `%neigeitems_maxCharge%` 物品最大使用次数
 
+
+
 `%neigeitems_nbt_XXXXX%` 物品对应NBT的值
 
-例：`%neigeitems_nbt_NeigeItems%` `%neigeitems_nbt_NeigeItems.id%`
+例：`%neigeitems_nbt_NeigeItems%`
+
+&#x20;      `%neigeitems_nbt_NeigeItems.id%`
+
+
 
 `%neigeitems_nbtnumber_保留小数位数_XXXXXX%` 物品对应NBT的值(进行取整)
 
