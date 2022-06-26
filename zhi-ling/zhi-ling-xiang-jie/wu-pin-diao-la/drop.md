@@ -22,5 +22,5 @@ description: >-
 {% hint style="info" %}
 你可以通过添加技能的方式让MM怪物掉落NI物品，示例如下：
 
-command{c="ni drop 物品ID 数量 \<caster.l.w> \<caster.l.x.#> \<caster.l.y.#> \<caster.l.z.#> true \<trigger.name>"} @Trigger \~onDeath
+command{c="ni drop 物品ID 数量 \<caster.l.w> \<caster.l.x.#> \<caster.l.y.#> \<caster.l.z.#> true \<target.name>"} @Trigger \~onDeath
 {% endhint %}
