@@ -35,7 +35,7 @@ test1:
     Equipment:
     - 'Helmet: Helmet1 0.5'
     - 'Chestplate: Chestplate1'
-    - 'Leggins: Leggins1 0.5'
+    - 'Leggings: Leggins1 0.5'
     - 'Boots: Boots1 0.5'
     - 'MainHand: MainHand1 0.5'
     - 'OffHand: OffHand1 0.5'
@@ -44,7 +44,7 @@ test1:
     - Helmet 0.5
     # 胸部NI装备100%掉落
     - Chestplate
-    - Leggins 0.5
+    - Leggings 0.5
     - Boots 0.5
     - MainHand 0.5
     - OffHand 0.5

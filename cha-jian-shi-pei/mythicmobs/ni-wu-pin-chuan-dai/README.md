@@ -31,7 +31,7 @@ test1:
     - 'Helmet: Helmet1 0.5'
     # 胸部100%几率穿戴ID为"Chestplate1"的NI物品
     - 'Chestplate: Chestplate1'
-    - 'Leggins: Leggins1 0.5'
+    - 'Leggings: Leggins1 0.5'
     - 'Boots: Boots1 0.5'
     - 'MainHand: MainHand1 0.5'
     - 'OffHand: OffHand1 0.5'
