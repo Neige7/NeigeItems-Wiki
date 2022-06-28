@@ -38,6 +38,7 @@
   * [动作变量](wu-pin/wu-pin-dong-zuo/dong-zuo-bian-liang.md)
 * [额外选项](wu-pin/e-wai-xuan-xiang/README.md)
   * [使用次数](wu-pin/e-wai-xuan-xiang/shi-yong-ci-shu.md)
+  * [物品光效](wu-pin/e-wai-xuan-xiang/wu-pin-guang-xiao.md)
 * [物品变量](wu-pin/wu-pin-bian-liang.md)
 
 ## 随机节点

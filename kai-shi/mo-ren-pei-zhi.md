@@ -182,6 +182,7 @@ ExampleItem:
   # 额外选项
   options:
     charge: 10
+    color: GOLD
   # 物品NBT
   nbt:
     # NBT中也可以随机调用节点
