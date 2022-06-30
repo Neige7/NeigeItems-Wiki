@@ -2,7 +2,11 @@
 
 ## 需求
 
-1.12.2-1.18.2 bukkit服务端
+1.12.2-1.19 paper服务端
+
+1.12.2 spigot服务端
+
+1.12.2 catserver服务端
 
 ## 安装Pouvoir
 
