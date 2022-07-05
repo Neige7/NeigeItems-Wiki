@@ -70,6 +70,7 @@
 ## 插件适配
 
 * [MythicMobs](cha-jian-shi-pei/mythicmobs/README.md)
-  * [NI物品掉落](cha-jian-shi-pei/mythicmobs/ni-wu-pin-diao-la.md)
+  * [NI物品掉落](cha-jian-shi-pei/mythicmobs/ni-wu-pin-diao-la/README.md)
+    * [多彩掉落](cha-jian-shi-pei/mythicmobs/ni-wu-pin-diao-la/duo-cai-diao-la.md)
   * [NI物品穿戴](cha-jian-shi-pei/mythicmobs/ni-wu-pin-chuan-dai/README.md)
     * [让穿戴物品随机掉落](cha-jian-shi-pei/mythicmobs/ni-wu-pin-chuan-dai/rang-chuan-dai-wu-pin-sui-ji-diao-la.md)
