@@ -4,11 +4,12 @@
 
 ```
 NeigeItems:
-  offset:
-    x: 横向偏移
-    y: 纵向偏移
-  angle:
-    type: 旋转方式
+  FancyDrop:
+    offset:
+      x: 横向偏移
+      y: 纵向偏移
+    angle:
+      type: 旋转方式
 ```
 
 横向偏移表示物品向四周弹射的力度
@@ -21,22 +22,24 @@ NeigeItems:
 
 ```
 NeigeItems:
-  offset:
-    x: 0.1
-    y: 1
-  angle:
-    # 转一圈弹出去
-    type: round
+  FancyDrop:
+    offset:
+      x: 0.1
+      y: 1
+    angle:
+      # 转一圈弹出去
+      type: round
 ```
 
 ```
 NeigeItems:
-  offset:
-    # 随机偏移值
-    x: 0-0.1
-    # 随机偏移值
-    y: 1-1.5
-  angle:
-    # 随机角度弹出去
-    type: random
+  FancyDrop:
+    offset:
+      # 随机偏移值
+      x: 0-0.1
+      # 随机偏移值
+      y: 1-1.5
+    angle:
+      # 随机角度弹出去
+      type: random
 ```
