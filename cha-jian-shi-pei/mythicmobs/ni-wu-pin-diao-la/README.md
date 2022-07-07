@@ -45,3 +45,15 @@ test3:
     # 掉落5个ID为"itemId"的NI物品
     - itemId 5
 ```
+
+顺带一提，因为整体支持调用即时声明节点，你可以通过节点自定义你的掉落概率（可根据权限、变量、等级、生命等一系列因素决定掉落概率）。下面我写一个最简单的例子
+
+```
+test4:
+  Type: ZOMBIE
+  Health: 1
+  NeigeItems:
+    Drops:
+    # 掉落玩家等级数量的ID为"itemId"的NI物品
+    - itemId <papi::player_level>
+```
