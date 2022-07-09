@@ -20,7 +20,9 @@ description: >-
   &#x20;                 这样物品生成时string-1的值将变为文本文本文本
 
 {% hint style="info" %}
-你可以通过添加技能的方式让MM怪物掉落NI物品，示例如下：
-
-command{c="ni drop 物品ID 数量 \<caster.l.w> \<caster.l.x.#> \<caster.l.y.#> \<caster.l.z.#> true \<trigger.name>"} @Trigger \~onDeath
+如果你想让MM怪物被玩家击杀后掉落NI物品，你可以直接查看下方页面：
 {% endhint %}
+
+{% content-ref url="../../../cha-jian-shi-pei/mythicmobs/ni-wu-pin-diao-la/" %}
+[ni-wu-pin-diao-la](../../../cha-jian-shi-pei/mythicmobs/ni-wu-pin-diao-la/)
+{% endcontent-ref %}
