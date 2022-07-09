@@ -75,3 +75,4 @@
     * [多彩掉落](cha-jian-shi-pei/mythicmobs/ni-wu-pin-diao-la/duo-cai-diao-la.md)
   * [NI物品穿戴](cha-jian-shi-pei/mythicmobs/ni-wu-pin-chuan-dai/README.md)
     * [让穿戴物品随机掉落](cha-jian-shi-pei/mythicmobs/ni-wu-pin-chuan-dai/rang-chuan-dai-wu-pin-sui-ji-diao-la.md)
+  * [掉落物品触发技能](cha-jian-shi-pei/mythicmobs/diao-la-wu-pin-chu-fa-ji-neng.md)
