@@ -25,6 +25,7 @@ ExampleItem:
 * GOLD
 * GRAY
 * GREEN
+* LIGHT\_PURPLE
 * RED
 * WHITE
 * YELLOW
