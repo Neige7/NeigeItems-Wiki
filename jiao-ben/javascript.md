@@ -5,6 +5,7 @@
 NeigeItems 的 JavaScript 节点目前提供以下对象
 
 * `player` 即 玩家本身
+* `args` 你调用时传入的参数，可能为null（未传入）
 
 提供以下函数
 
