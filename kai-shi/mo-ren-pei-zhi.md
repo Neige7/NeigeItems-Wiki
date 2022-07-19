@@ -4,10 +4,10 @@
 {% tab title="config.yml" %}
 ```
 Main:
-  # 物品管理指令
-  NeigeItemManagerCommand: ni
   # MM物品默认保存路径
   MMItemsPath: MMItems.yml
+  # 是否开启debug模式
+  Debug: false
 Messages:
   # 玩家不在线提示
   invalidPlayer: §e[NI] §6玩家不在线或不存在
@@ -298,6 +298,7 @@ inheritSectionTest:
       template: templateTest
 actionTest:
   material: STONE
+  name: <test>
   nbt:
     test1: "666"
     test2: 
@@ -306,7 +307,20 @@ actionTest:
     - "888"
     - "999"
   sections:
-    test: "000"
+    test: "yeah"
+customSection:
+  material: STONE
+  lore:
+    - '自定义节点测试: <test-1>'
+    - '自定义节点测试: <test::test_test_test>'
+  sections:
+    test-1:
+      type: test
+      values:
+        - test
+        - test
+        - test
+        - test
 
 ```
 {% endtab %}
@@ -315,14 +329,11 @@ actionTest:
 ```
 function main() {
     if (typeof player != "undefined") {
-        return vars("strings-1") + player.getName()
+        return vars("<strings-1>") + player.getName()
     } else {
-        return vars("strings-1")
+        return vars("<strings-1>")
     }
 }
-
-load = function() {return this}
-load()
 
 ```
 {% endtab %}
@@ -386,6 +397,7 @@ actionTest:
   - "console: say 名为test4.0的NBT的值为: <nbt::test4.0>"
   - "console: say 名为test4.1的NBT的值为: <nbt::test4.1>"
   - "console: say 名为test的节点的值为: <data::test>"
+  - "console: say 随机数尝试: <number::0_10_2>"
 ```
 {% endtab %}
 {% endtabs %}
