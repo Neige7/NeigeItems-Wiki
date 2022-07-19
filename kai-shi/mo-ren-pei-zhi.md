@@ -4,10 +4,10 @@
 {% tab title="config.yml" %}
 ```
 Main:
-  # 物品管理指令
-  NeigeItemManagerCommand: ni
   # MM物品默认保存路径
   MMItemsPath: MMItems.yml
+  # 是否开启debug模式
+  Debug: false
 Messages:
   # 玩家不在线提示
   invalidPlayer: §e[NI] §6玩家不在线或不存在
@@ -298,6 +298,7 @@ inheritSectionTest:
       template: templateTest
 actionTest:
   material: STONE
+  name: <test>
   nbt:
     test1: "666"
     test2: 
@@ -306,7 +307,20 @@ actionTest:
     - "888"
     - "999"
   sections:
-    test: "000"
+    test: "yeah"
+customSection:
+  material: STONE
+  lore:
+    - '自定义节点测试: <test-1>'
+    - '自定义节点测试: <test::test_test_test>'
+  sections:
+    test-1:
+      type: test
+      values:
+        - test
+        - test
+        - test
+        - test
 
 ```
 {% endtab %}
@@ -315,14 +329,11 @@ actionTest:
 ```
 function main() {
     if (typeof player != "undefined") {
-        return vars("strings-1") + player.getName()
+        return vars("<strings-1>") + player.getName()
     } else {
-        return vars("strings-1")
+        return vars("<strings-1>")
     }
 }
-
-load = function() {return this}
-load()
 
 ```
 {% endtab %}
@@ -386,6 +397,77 @@ actionTest:
   - "console: say 名为test4.0的NBT的值为: <nbt::test4.0>"
   - "console: say 名为test4.1的NBT的值为: <nbt::test4.1>"
   - "console: say 名为test的节点的值为: <data::test>"
+  - "console: say 随机数尝试: <number::0_10_2>"
+```
+{% endtab %}
+
+{% tab title="CustomSection/CustomSection.js" %}
+```
+// 文件名不重要, 写成啥都行
+// main函数会自动执行
+function main() {
+    // 导入相应的类, 这两行看不懂的话直接抄就行
+    const SectionManager = Packages.pers.neige.neigeitems.manager.SectionManager.INSTANCE
+    const CustomSection = Packages.pers.neige.neigeitems.section.impl.CustomSection
+    const SectionUtils = Packages.pers.neige.neigeitems.utils.SectionUtils
+
+    // 创建自定义节点
+    const customSection = new CustomSection(
+        // 节点id
+        "test",
+        /**
+         * 用于私有节点解析
+         * @param data ConfigurationSection 节点内容
+         * @param cache HashMap<String, String>? 解析值缓存
+         * @param player OfflinePlayer? 待解析玩家
+         * @param sections ConfigurationSection? 节点池
+         * @return 解析值
+         */
+        function(data, cache, player, sections) {
+            if (data.contains("values")) {
+                // SectionUtils.parseSection("待解析字符串", cache, player, sections)用于解析节点内容
+                return SectionUtils.parseSection("<number::0_1_2>", cache, player, sections)
+            }
+            return null
+        },
+        /**
+         * 用于即时节点解析
+         * @param args List<String> 节点参数
+         * @param cache HashMap<String, String>? 解析值缓存
+         * @param player OfflinePlayer? 待解析玩家
+         * @param sections ConfigurationSection? 节点池
+         * @return 解析值
+         */
+        function(args, cache, player, sections) {
+            return SectionUtils.parseSection("<number::0_1_2>", cache, player, sections)
+        })
+    // 节点注册
+    SectionManager.loadParser(customSection)
+}
+
+```
+{% endtab %}
+
+{% tab title="CustomActions/CustomActions.js" %}
+```
+// 文件名不重要, 写成啥都行
+// main函数会自动执行
+function main() {
+    // 导入相应的类, 这两行看不懂的话直接抄就行
+    const ActionManager = Packages.pers.neige.neigeitems.manager.ActionManager.INSTANCE
+
+    // 插入新的自定义动作
+    ActionManager.addAction(
+        // 动作名称
+        "test",
+        // 动作内容(一般是异步调用的, 所以需要同步执行的内容需要自行同步)
+        function(player, string) {
+            player.sendMessage("1233211234567")
+            // 每个动作都一定要返回一个布尔量(true或false)
+            return true
+        })
+}
+
 ```
 {% endtab %}
 {% endtabs %}
