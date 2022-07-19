@@ -181,6 +181,14 @@ description: 全部动作支持papi变量, 不区分大小写
 - 'setHealth: 20'
 ```
 
+## 释放MM技能
+
+> 释放MM技能
+
+```yaml
+- 'castSkill: 技能名称'
+```
+
 ## 延时
 
 > 延迟动作执行(单位是tick)
