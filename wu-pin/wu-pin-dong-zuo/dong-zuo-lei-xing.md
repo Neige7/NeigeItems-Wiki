@@ -183,7 +183,7 @@ description: 全部动作支持papi变量, 不区分大小写
 
 ## 释放MM技能
 
-> 释放MM技能
+> 释放MM技能, 对创造模式玩家无效
 
 ```yaml
 - 'castSkill: 技能名称'
