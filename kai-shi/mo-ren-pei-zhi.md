@@ -448,7 +448,7 @@ function main() {
 ```
 {% endtab %}
 
-{% tab title="CustomActions/CustomActions.js" %}
+{% tab title="CustomActions/CustomAction.js" %}
 ```
 // 文件名不重要, 写成啥都行
 // main函数会自动执行
