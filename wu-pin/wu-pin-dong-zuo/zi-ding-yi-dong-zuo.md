@@ -12,6 +12,7 @@
 function main() {
     // 导入相应的类, 这两行看不懂的话直接抄就行
     const ActionManager = Packages.pers.neige.neigeitems.manager.ActionManager.INSTANCE
+    const SectionUtils = Packages.pers.neige.neigeitems.utils.SectionUtils
 
     // 插入新的自定义动作
     ActionManager.addAction(
@@ -19,7 +20,10 @@ function main() {
         "test",
         // 动作内容(一般是异步调用的, 所以需要同步执行的内容需要自行同步)
         function(player, string) {
-            player.sendMessage("1233211234567")
+            // 调用动作
+            ActionManager.runAction(player, "tell: 123")
+            ActionManager.runAction(player, "tell: 456")
+            player.sendMessage(SectionUtils.parseSection("<number::0_10_2>"))
             // 每个动作都一定要返回一个布尔量(true或false)
             return true
         })
