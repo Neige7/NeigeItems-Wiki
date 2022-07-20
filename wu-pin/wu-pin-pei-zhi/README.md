@@ -72,3 +72,59 @@ ID都有哪些，见下方链接
 但是啊但是，你有没有看上面啊？
 
 /ni save是万物起源。别搁这儿看ID了，保存一下什么都有了，看个锤子看。
+
+### 子ID/损伤值
+
+在 1.12.2 及以下的版本中，某些物品存在“子ID”。
+
+比如 WOOL 是白色羊毛，而子ID为 1 的 WOOL 是橙色羊毛。
+
+![](../../.gitbook/assets/子ID.png)
+
+对应配置方法如下
+
+```
+白色羊毛:
+  material: WOOL
+橙色羊毛:
+  material: WOOL
+  # 子ID为1
+  damage: 1
+```
+
+而对于有耐久的物品，damage对应损伤值，即，物品消耗了几点耐久。
+
+```
+铁剑:
+  material: IRON_SWORD
+用了一下的铁剑:
+  material: IRON_SWORD
+  # 消耗了1点耐久
+  damage: 1
+```
+
+### 附魔
+
+附魔名称列表，应前往以下链接查看
+
+{% embed url="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html" %}
+
+具体配置方法如下
+
+```
+有附魔的铁剑:
+  material: IRON_SWORD
+  enchantments:
+    # 锋利5
+    DAMAGE_ALL: 5
+```
+
+啥？你说全是英文你根本看不懂哪个对哪个？
+
+/ni save干什么用的
+
+### CustomModelData
+
+对于1.14+的服务器，物品有了一个新的属性，CustomModelData。
+
+一般人们用它搭配材质包制作自定义材质物品。
