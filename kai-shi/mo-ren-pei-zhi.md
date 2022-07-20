@@ -59,6 +59,8 @@ Messages:
   itemCooldown: §e物品冷却中! 请等待{time}秒
   # 物品列表内, 点击获取物品提示
   clickGiveMessage: §e点击获取该物品
+  # 掉落物归属提示信息
+  invalidOwnerMessage: §6无法拾取该物品, 该物品的拥有者是 §f{name}
   # 帮助信息
   helpMessages:
   - §6====================§eNeigeItems§6====================
@@ -321,6 +323,18 @@ customSection:
         - test
         - test
         - test
+eatTest:
+  material: APPLE
+eatTest2:
+  material: APPLE
+  options:
+    charge: 10
+dropTest:
+  material: STONE
+dropTest2:
+  material: STONE
+  options:
+    charge: 3
 
 ```
 {% endtab %}
