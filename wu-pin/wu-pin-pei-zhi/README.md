@@ -16,37 +16,49 @@
 [mo-ren-pei-zhi.md](../../kai-shi/mo-ren-pei-zhi.md)
 {% endcontent-ref %}
 
-## 结构
+## 编写你的物品
 
-* 物品ID
-  * 物品材质
-  * CustomModelData
-  * 子ID/损伤值
-  * 物品名
-  * 物品Lore（物品描述）\
-    \- 第一行Lore\
-    \- 第二行Lore
-  * 附魔
-    * 附魔ID: 附魔等级
-  * 隐藏标识\
-    \- 隐藏标识1\
-    \- 隐藏标识2
-  * 颜色（0-65535）
-  * 物品NBT
-    * NBT键: NBT值
-  * 额外选项
-    * 物品使用冷却
-    * 物品消耗选项
-      * 消耗冷却
-      * 消耗数量
-      * 左键是否消耗
-      * 右键是否消耗
-  * 引用的全局节点\
-    \- 全局节点1\
-    \- 全局节点2
-  * 私有节点
-    * 私有节点ID
-      * 私有节点类型
-      * 私有节点配置
-      * 私有节点配置
-      * 私有节点配置
+### /ni save是万物起源
+
+遇事不决，/ni save。如果不行，就/ni cover。这是最简单最便捷的快速生成物品配置的方法
+
+{% content-ref url="../../zhi-ling/zhi-ling-xiang-jie/wu-pin-bao-cun/save.md" %}
+[save.md](../../zhi-ling/zhi-ling-xiang-jie/wu-pin-bao-cun/save.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../zhi-ling/zhi-ling-xiang-jie/wu-pin-bao-cun/cover.md" %}
+[cover.md](../../zhi-ling/zhi-ling-xiang-jie/wu-pin-bao-cun/cover.md)
+{% endcontent-ref %}
+
+某人不看配置不进游戏，草草看过两遍wiki，声称wiki看不懂，被众群友嘲笑良久。
+
+### ID
+
+所有物品都应该有一个ID，如下格式：
+
+```
+物品ID:
+  # 具体的配置项, 以物品材质为例
+  material: STONE
+```
+
+### 材质
+
+即，物品是石头还是木头还是钻石剑
+
+```
+物品1:
+  # 这个物品是石头
+  material: STONE
+物品2:
+  # 这个物品是钻石
+  material: DIAMOND
+```
+
+ID都有哪些，见下方链接
+
+{% embed url="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html" %}
+
+如果你看着 ID 不知道它对应什么物品。。。
+
+一般来讲，你可以在游戏中同时按下 F3+H，启用高级显示框，这样物品下方就会出现对应的ID。![](../../.gitbook/assets/高级提示框.png)
