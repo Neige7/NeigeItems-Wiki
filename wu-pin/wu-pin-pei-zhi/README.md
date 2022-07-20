@@ -73,6 +73,29 @@ ID都有哪些，见下方链接
 
 /ni save是万物起源。别搁这儿看ID了，保存一下什么都有了，看个锤子看。
 
+### 物品名
+
+具体配置如下
+
+```
+有名字的铁剑:
+  material: IRON_SWORD
+  name: 我有名字
+```
+
+### 物品Lore
+
+具体配置如下
+
+```
+有Lore的铁剑:
+  material: IRON_SWORD
+  lore:
+  - 我有lore
+  - 我真有lore
+  - 信我
+```
+
 ### 子ID/损伤值
 
 在 1.12.2 及以下的版本中，某些物品存在“子ID”。
@@ -103,6 +126,21 @@ ID都有哪些，见下方链接
   damage: 1
 ```
 
+### CustomModelData
+
+对于 1.14+ 的服务器，物品有了一个新的属性，CustomModelData。
+
+一般人们用它搭配材质包制作自定义材质物品。
+
+对应配置方法如下
+
+```
+铁剑:
+  material: IRON_SWORD
+  # CustomModelData 为 1
+  custommodeldata: 1
+```
+
 ### 附魔
 
 附魔名称列表，应前往以下链接查看
@@ -123,8 +161,40 @@ ID都有哪些，见下方链接
 
 /ni save干什么用的
 
-### CustomModelData
+### 无法破坏
 
-对于1.14+的服务器，物品有了一个新的属性，CustomModelData。
+具体配置如下
 
-一般人们用它搭配材质包制作自定义材质物品。
+```
+无法破坏的铁剑:
+  material: IRON_SWORD
+  unbreakable: true
+```
+
+### 隐藏属性
+
+有的物品明明无法破坏，物品信息里却看不到。
+
+有的物品明明有附魔，物品信息里却看不到。
+
+具体配置方法如下
+
+```
+啥都看不到的铁剑:
+  material: IRON_SWORD
+  hideflags:
+  # 隐藏物品属性
+  - HIDE_ATTRIBUTES
+  # 隐藏物品可破坏方块
+  - HIDE_DESTROYS
+  # 隐藏物品染料颜色
+  - HIDE_DYE
+  # 隐藏物品附魔
+  - HIDE_ENCHANTS
+  # 隐藏物品可放置方块
+  - HIDE_PLACED_ON
+  # 隐藏物品药水效果
+  - HIDE_POTION_EFFECTS
+  # 隐藏物品无法破坏
+  - HIDE_UNBREAKABLE
+```
