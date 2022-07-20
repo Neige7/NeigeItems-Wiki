@@ -265,3 +265,78 @@ NeigeItems也允许你这样做。
 使用类型转换前缀，一定要加空格
 
 但是啊但是，别搁这儿看了，你直接/ni save一下，自动就都出来了。
+
+### 额外选项
+
+使用次数，物品光效，掉落技能什么的，都属于额外选项。
+
+具体配置如下
+
+```
+嗯叠BUFF的铁剑:
+  material: IRON_SWORD
+  options:
+    charge: 10
+    color: GOLD
+```
+
+options下面的就是额外选项。
+
+具体内容点击下方跳转
+
+{% content-ref url="../e-wai-xuan-xiang/" %}
+[e-wai-xuan-xiang](../e-wai-xuan-xiang/)
+{% endcontent-ref %}
+
+### 模板继承
+
+你可以让一个配置继承其他配置的部分或全部内容
+
+具体内容点击下方跳转
+
+{% content-ref url="mo-ban-ji-cheng.md" %}
+[mo-ban-ji-cheng.md](mo-ban-ji-cheng.md)
+{% endcontent-ref %}
+
+### 随机节点
+
+私有节点应直接配置与物品下方，比如
+
+```
+随机名称的铁剑:
+  material: IRON_SWORD
+  name: <weight-1>
+  sections:
+    weight-1:
+      type: weight
+      values:
+      - 5::名字1
+      - 4::名字2
+      - 3::名字3
+      - 2::名字4
+      - 1::名字5
+```
+
+有关私有节点的各个类型，具体查看
+
+{% content-ref url="../../sui-ji-jie-dian/si-you-quan-ju-jie-dian/" %}
+[si-you-quan-ju-jie-dian](../../sui-ji-jie-dian/si-you-quan-ju-jie-dian/)
+{% endcontent-ref %}
+
+### 全局节点引用
+
+你可以在物品配置中引用全局节点。
+
+插件会在初始化的时候检查各个物品是否引用全局节点，如果引用了，就将所有引用到的节点加载到物品配置中，当做私有节点解析和调用。（当然，这个过程不会反应到物品配置上）
+
+具体调用方式如下
+
+```
+铁剑:
+  material: IRON_SWORD
+  globalsections:
+  # 引用 ExampleSection.yml 文件中的全部全局节点
+  - ExampleSection.yml
+  # 引用名为 global-strings-1 的全局节点
+  - global-strings-1
+```
