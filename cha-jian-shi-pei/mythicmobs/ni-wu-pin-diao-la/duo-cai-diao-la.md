@@ -4,6 +4,8 @@ description: 相关配置支持解析即时声明变量
 
 # 多彩掉落
 
+在MM怪物的配置中添加
+
 掉落物可以像无主之地一样喷射到空中，具体配置方法如下
 
 ```
@@ -25,27 +27,33 @@ NeigeItems:
 下面我写几个配置实例：
 
 ```
-NeigeItems:
-  FancyDrop:
-    offset:
-      x: 0.1
-      y: 1
-    angle:
-      # 转一圈弹出去
-      type: round
+test1:
+  Type: ZOMBIE
+  Health: 1
+  NeigeItems:
+    FancyDrop:
+      offset:
+        x: 0.1
+        y: 1
+      angle:
+        # 转一圈弹出去
+        type: round
 ```
 
 ```
-NeigeItems:
-  FancyDrop:
-    offset:
-      # 随机偏移值
-      x: 0-0.1
-      # 随机偏移值
-      y: 1-1.5
-    angle:
-      # 随机角度弹出去
-      type: random
+test1:
+  Type: ZOMBIE
+  Health: 1
+  NeigeItems:
+    FancyDrop:
+      offset:
+        # 随机偏移值
+        x: 0-0.1
+        # 随机偏移值
+        y: 1-1.5
+      angle:
+        # 随机角度弹出去
+        type: random
 ```
 
 ![](../../../.gitbook/assets/多彩掉落.gif)
