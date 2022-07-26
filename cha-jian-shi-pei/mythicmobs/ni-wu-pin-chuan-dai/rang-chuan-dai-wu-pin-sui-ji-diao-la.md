@@ -12,6 +12,8 @@ description: 相关配置支持解析即时声明变量
 
 所以NI特意提供了相关的配置，配置如下
 
+在MM怪物的配置中添加
+
 ```
 NeigeItems:
   DropEquipment:
@@ -29,7 +31,7 @@ NeigeItems:
 
 掉落概率默认为1
 
-下面我写一个示例配置
+下面我写一个MM怪物示例配置
 
 ```
 test1:
