@@ -354,10 +354,10 @@ CustomAction:
 {% tab title="Scripts/ExampleScript.js" %}
 ```
 function main() {
-    if (typeof player != "undefined") {
-        return vars("<strings-1>") + player.getName()
+    if (typeof this.player != "undefined") {
+        return this.vars("<strings-1>") + this.player.getName()
     } else {
-        return vars("<strings-1>")
+        return this.vars("<strings-1>")
     }
 }
 

@@ -4,13 +4,13 @@
 
 NeigeItems 的 JavaScript 节点目前提供以下对象
 
-* `player` 即 玩家本身
-* `args` 你调用时传入的参数，可能为null（未传入）
+* `this.player` 即 玩家本身
+* `arguments` 你调用时传入的参数，以数组形式出现
 
 提供以下函数
 
-* `vars(String id)` 根据ID解析节点
-* `papi(String text)` 解析papi变量
+* `this.vars(String id)` 根据ID解析节点
+* `this.papi(String text)` 解析papi变量
 
 ## 路径
 
